@@ -17,12 +17,12 @@ from os import environ
 
 from .base import *
 
-ALLOWED_HOSTS = ['django-precog.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 
-WSGI_APPLICATION = 'django_precog.wsgi_heroku.application'
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+WSGI_APPLICATION = 'django_precog.wsgi.application'
+#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 STATIC_ROOT = root('static_root')
 
 
@@ -51,7 +51,7 @@ STATICFILES_DIRS = (
 SECRET_KEY = 'h54)u-i)+1)4uk@2hlt%77u@da=n2-o@04_m%y&5ha%wjdmih9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
