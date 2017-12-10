@@ -44,8 +44,6 @@ jupyter-core==4.4.0
 Keras==1.2.2
 keyring==7.3
 launchpadlib==1.10.3
-lazr.restfulclient==0.13.4
-lazr.uri==1.0.3
 lxml==3.5.0
 Markdown==2.6.9
 MarkupSafe==1.0
