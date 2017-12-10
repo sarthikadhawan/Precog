@@ -6,9 +6,14 @@ import os
 
 import numpy as np
 
+import gridfs
+
+from pymongo import MongoClient
 
 
 
+
+	    
 
 
 def detect_face(img):
@@ -186,6 +191,7 @@ def main(filename):
 	test_img = cv2.imread(os.getcwd()+"/django_precog/static/"+filename)
 
 
+	
 
 	predicted_img,s = predict(test_img,subjects)
 	#cv2.imshow("Output",cv2.resize(predicted_img, (400, 500)))
