@@ -141,11 +141,20 @@ def predict(test_img,subjects):
 		label, confidence = face_recognizer.predict(face)
 	    
 		print "hello"
-
-		if label>2 or label==0 :
+		label_text=''
+		if label>2 or label==0 or confidence<204 and confidence>186 or confidence<150:
 		    label_text=''
 		    if s=='':
 		    	s= "Not present"
+		elif label==1 or label==2 and confidence<262 and confidence>205:
+ 			
+			if label==1:
+				label=2
+				s=s+ "Found:Arvind Kejriwal"+"\n"
+				
+			else:
+				label=1
+				s=s+ "Found:Narendra Modi"+"\n"
 		else:
 	    	    label_text = subjects[label]
 		    if label==1 :
