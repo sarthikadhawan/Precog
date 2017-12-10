@@ -116,7 +116,7 @@ def draw_rectangle(img, rect):
     
 
 def draw_text(img, text, x, y):
-    cv2.putText(img, text, (x, y), cv2.FONT_HERSHEY_PLAIN, 1, (0, 255, 0), 1)
+    cv2.putText(img, '', (x, y), cv2.FONT_HERSHEY_PLAIN, 1, (0, 255, 0), 1)
 
 
 
