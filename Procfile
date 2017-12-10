@@ -1,2 +1,3 @@
-web: gunicorn --pythonpath django django_precog.wsgi_heroku --log-file -
+web: gunicorn django_precog.wsgi --log-file -
+
 
