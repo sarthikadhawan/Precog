@@ -12,6 +12,7 @@ def storedata(data_folder_path):
 
     client = MongoClient('localhost', 27017)
     database = client['django_precog']
+    fs = gridfs.GridFS(database)
 
     for dir_name in dirs:
         
@@ -49,7 +50,7 @@ def storedata(data_folder_path):
     	    #database = connection['django_precog']
  
 
-    	    fs = gridfs.GridFS(database)
+
      
 
     	    stored = fs.put(thedata, filename=str(label)+"_"+image_name)
@@ -69,7 +70,7 @@ def storedata(data_folder_path):
  
  
 
-    	    fs.delete(stored)
+    	    #fs.delete(stored)
 
     #connection.close()
 
