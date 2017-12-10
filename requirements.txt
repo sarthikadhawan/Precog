@@ -1,9 +1,0 @@
-gencpp==0.5.5
-geneus==2.2.5
-genlisp==0.4.16
-genmsg==0.5.8
-gennodejs==2.0.1
-genpy==0.6.5
-rosgraph==1.12.7
-roslib==1.13.5
-rospy==1.12.7
