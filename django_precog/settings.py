@@ -17,7 +17,7 @@ from os import environ
 
 #from .base import *
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1','localhost','*']
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -53,7 +53,7 @@ STATICFILES_DIRS = (
 SECRET_KEY = 'h54)u-i)+1)4uk@2hlt%77u@da=n2-o@04_m%y&5ha%wjdmih9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -146,5 +146,4 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-
 
