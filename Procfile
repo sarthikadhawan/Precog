@@ -1,3 +1,3 @@
-web: gunicorn django_precog.wsgi django_precog:app --log-file -
+web: gunicorn django_precog.wsgi --log-file -
 
 
