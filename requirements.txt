@@ -25,12 +25,6 @@ funcsigs==1.0.2
 functools32==3.2.3.post2
 future==0.16.0
 futures==3.2.0
-gencpp==0.5.5
-geneus==2.2.5
-genlisp==0.4.16
-genmsg==0.5.8
-gennodejs==2.0.1
-genpy==0.6.5
 gunicorn==19.7.1
 h5py==2.7.0
 hmm==0.0.1
