@@ -17,7 +17,7 @@ from os import environ
 
 #from .base import *
 
-ALLOWED_HOSTS = ['https://django-projectt.herokuapp.com/']
+ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1','localhost','*']
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
