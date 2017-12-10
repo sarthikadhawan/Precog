@@ -15,7 +15,7 @@ import os
 
 from os import environ
 
-from .base import *
+#from .base import *
 
 ALLOWED_HOSTS = ['*']
 
@@ -23,7 +23,7 @@ ALLOWED_HOSTS = ['*']
 
 WSGI_APPLICATION = 'django_precog.wsgi.application'
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-STATIC_ROOT = root('static_root')
+#STATIC_ROOT = root('static_root')
 
 
 
