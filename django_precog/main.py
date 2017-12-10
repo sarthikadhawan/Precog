@@ -127,8 +127,9 @@ def predict(test_img,subjects):
 
     face_recognizer.train(faces, np.array(labels))
 
-    img = test_img.copy()
+    img = test_img.copy() 
 
+    print "hi\n"
     #face, rect = detect_face(img)
     gray,faces = detect_face(img)
     if len (faces)>0: 
@@ -139,9 +140,9 @@ def predict(test_img,subjects):
 
 		label, confidence = face_recognizer.predict(face)
 	    
+		print "hello"
 
-
-		if label>2 or label==0 or confidence<200:
+		if label>2 or label==0 :
 		    label_text=''
 		    if s=='':
 		    	s= "Not present"

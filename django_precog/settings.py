@@ -19,17 +19,19 @@ from os import environ
 
 ALLOWED_HOSTS = ['*']
 
-
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 WSGI_APPLICATION = 'django_precog.wsgi.application'
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 #STATIC_ROOT = root('static_root')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 
 
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR+ '/django_precog/media/'
@@ -51,7 +53,7 @@ STATICFILES_DIRS = (
 SECRET_KEY = 'h54)u-i)+1)4uk@2hlt%77u@da=n2-o@04_m%y&5ha%wjdmih9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
