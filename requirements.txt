@@ -30,7 +30,7 @@ h5py==2.7.0
 hmm==0.0.1
 hmmlearn==0.2.0
 html5lib==0.999999999
-httplib2==0.9.1
+httplib2==0.18.0
 idna==2.6
 ImageScraper==2.0.7
 ipaddress==1.0.16
