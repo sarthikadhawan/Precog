@@ -75,7 +75,7 @@ setproctitle==1.1.10
 simplejson==3.8.1
 SimplePool==0.1
 six==1.11.0
-urllib3==1.22
+urllib3==1.26.5
 validation==0.4.0
 vcstools==0.1.39
 virtualenv==15.1.0
