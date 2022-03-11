@@ -60,7 +60,7 @@ oauthlib==2.0.4
 opencv-python==3.3.0.10
 paramiko==1.16.0
 pbr==3.1.1
-Pillow==3.1.2
+Pillow==9.0.1
 plotly==2.2.1
 protobuf==3.4.0
 pyasn1==0.4.2
