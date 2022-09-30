@@ -38,7 +38,7 @@ ipython-genutils==0.2.0
 itsdangerous==0.24
 Jinja2==2.10
 jmespath==0.9.3
-joblib==0.9.4
+joblib==1.2.0
 jsonschema==2.6.0
 jupyter-core==4.4.0
 Keras==1.2.2
